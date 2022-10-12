@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.buttonNorth = new System.Windows.Forms.Button();
+            this.buttonEast = new System.Windows.Forms.Button();
+            this.buttonSouth = new System.Windows.Forms.Button();
+            this.buttonWest = new System.Windows.Forms.Button();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -41,41 +41,45 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // button1
+            // buttonNorth
             // 
-            this.button1.Location = new System.Drawing.Point(398, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(91, 39);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "North";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonNorth.Location = new System.Drawing.Point(398, 12);
+            this.buttonNorth.Name = "buttonNorth";
+            this.buttonNorth.Size = new System.Drawing.Size(91, 39);
+            this.buttonNorth.TabIndex = 0;
+            this.buttonNorth.Text = "North";
+            this.buttonNorth.UseVisualStyleBackColor = true;
+            this.buttonNorth.Click += new System.EventHandler(this.buttonNorth_Click);
             // 
-            // button2
+            // buttonEast
             // 
-            this.button2.Location = new System.Drawing.Point(630, 169);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(91, 39);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "East";
-            this.button2.UseVisualStyleBackColor = true;
+            this.buttonEast.Location = new System.Drawing.Point(630, 169);
+            this.buttonEast.Name = "buttonEast";
+            this.buttonEast.Size = new System.Drawing.Size(91, 39);
+            this.buttonEast.TabIndex = 1;
+            this.buttonEast.Text = "East";
+            this.buttonEast.UseVisualStyleBackColor = true;
+            this.buttonEast.Click += new System.EventHandler(this.buttonEast_Click);
             // 
-            // button3
+            // buttonSouth
             // 
-            this.button3.Location = new System.Drawing.Point(398, 331);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(91, 39);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "South";
-            this.button3.UseVisualStyleBackColor = true;
+            this.buttonSouth.Location = new System.Drawing.Point(398, 331);
+            this.buttonSouth.Name = "buttonSouth";
+            this.buttonSouth.Size = new System.Drawing.Size(91, 39);
+            this.buttonSouth.TabIndex = 2;
+            this.buttonSouth.Text = "South";
+            this.buttonSouth.UseVisualStyleBackColor = true;
+            this.buttonSouth.Click += new System.EventHandler(this.buttonSouth_Click);
             // 
-            // button4
+            // buttonWest
             // 
-            this.button4.Location = new System.Drawing.Point(158, 169);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(91, 39);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "West";
-            this.button4.UseVisualStyleBackColor = true;
+            this.buttonWest.Location = new System.Drawing.Point(158, 169);
+            this.buttonWest.Name = "buttonWest";
+            this.buttonWest.Size = new System.Drawing.Size(91, 39);
+            this.buttonWest.TabIndex = 3;
+            this.buttonWest.Text = "West";
+            this.buttonWest.UseVisualStyleBackColor = true;
+            this.buttonWest.Click += new System.EventHandler(this.buttonWest_Click);
             // 
             // progressBar1
             // 
@@ -108,7 +112,7 @@
             // 
             this.button5.Location = new System.Drawing.Point(630, 320);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.Size = new System.Drawing.Size(75, 27);
             this.button5.TabIndex = 8;
             this.button5.Text = "Attack";
             this.button5.UseVisualStyleBackColor = true;
@@ -154,12 +158,13 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.progressBar1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonWest);
+            this.Controls.Add(this.buttonSouth);
+            this.Controls.Add(this.buttonEast);
+            this.Controls.Add(this.buttonNorth);
             this.Name = "Form1";
             this.Text = "WinDungeonCrawler";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -167,10 +172,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button buttonNorth;
+        private System.Windows.Forms.Button buttonEast;
+        private System.Windows.Forms.Button buttonSouth;
+        private System.Windows.Forms.Button buttonWest;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
