@@ -138,6 +138,7 @@
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.Color.Black;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.textBox1.Location = new System.Drawing.Point(255, 57);
             this.textBox1.Multiline = true;

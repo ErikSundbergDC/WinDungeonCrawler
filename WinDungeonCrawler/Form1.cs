@@ -172,5 +172,7 @@ namespace WinDungeonCrawler
             playerCharacter.Position = playerCharacter.Position.ExitWest;
             DisplayRoom(playerCharacter.Position);
         }
+
+        
     }
 }
