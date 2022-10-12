@@ -147,6 +147,12 @@ namespace WinDungeonCrawler
                 buttonWest.Enabled = true;
             }
 
+            listBox1.Items.Clear();
+            foreach(BaseCharacter character in room.Characters)
+            {
+                listBox1.Items.Add(character.Name);
+            }
+            
         }
 
         private void buttonEast_Click(object sender, EventArgs e)
